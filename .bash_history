@@ -1,57 +1,3 @@
-php mailClient.php 
-cat /bak/log/swoole_task/sms.log 
-php mailClient.php 
-cat /bak/log/swoole_task/sms.log 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-php mailClient.php 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-cat /bak/log/swoole_task/sms.log 
-cat /bak/log/swoole_task/sms.log |grep appid
-php mailClient.php 
-cat /bak/log/swoole_task/sms.log |grep appid
-cat /bak/log/swoole_task/task_2019-10-01.log 
-php mailClient.php 
-cat /var/log/swoole.log 
-cat /bak/log/swoole_task/sms.log 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-php mailClient.php 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-cat /etc/init.d/apache2 
-apt-get install apache2 -y
-apt-get install libapache2-mod-php -y
-exit
-ps -ef
-kill -p 24
-kill  24
-ps -ef
-cd /root/
-ls
-cd public/
-ls
-php mailServer.php
-ps -ef
-kill $(cat /run/swooleMail.pid)
-ps -ef
-php mailServer.php
-kill $(cat /run/swooleMail.pid)
-pwd
-cd ~
-cd /usr/local/bin/
-vim start.sh
-vim start.sh
-chmod +x start.sh 
-start.sh
-vim start.sh 
-start.sh
-ps -ef
-vim start.sh 
-cd ~
-start.sh
-docker ps
-ps -ef
-start.sh
-ps -ef
 netstat -lntup
 start.sh
 docker ps
@@ -497,4 +443,58 @@ exit
 netstat -ltnup
 exit
 netstat -lntup
+exit
+ls
+cat /var/log/swoole.log 
+exit
+ls
+cd /var/www/
+ls
+cd /root/
+ls
+cd public/
+ls
+cd ..
+exit
+php -v
+php -r 'echo '
+php -r "echo date('Y-m-d H:i:s');"
+php -r "date_default_timezone_set("Asia/Shanghai");echo date('Y-m-d H:i:s');"
+php -r "date_default_timezone_set('Asia/Shanghai');echo date('Y-m-d H:i:s');"
+exit
+whereis php 
+cd /usr/local/etc/php 
+ls
+cd conf.d/
+ls
+time
+ls
+ timedatectl  set-timezone Asia/Shanghai
+apt-get install  timedatectl  
+timedatectl list-timezones
+ls
+exit
+cat /usr/bin/start.sh
+exit
+cat start.sh
+whereis start.sh
+cat  /usr/local/bin/start.sh
+exit
+whereis start.sh
+php -r 'phpinfo();'|grep ini
+php -r 'phpinfo();'|grep php.ini
+cd /usr/local/etc/php
+ls
+cd conf.d
+ls
+cat upload.ini
+vim time.ini
+cat upload.ini
+cat time.ini
+php -r "echo date("H:s:i")"
+php -r "echo date("H:i:s");"
+php -r "echo date('Y-m-d H:i:s');"
+exit
+cat /usr/local/etc/php/conf.d/time.ini
+php -r "echo date('Y-m-d H:i:s');"
 exit

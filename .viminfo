@@ -14,9 +14,9 @@
 $
 
 # Command Line History (newest to oldest):
+:x
 :q!
 :/onTask
-:x
 :q！
 :q1
 :/overcommit
@@ -83,18 +83,19 @@ $
 	#
 
 # File marks:
-'0  2  0  ~/public/mailClientTest.php
-'1  130  0  ~/public/mailClientTest.php
-'2  1  0  ~/public/mailClientTest.php
-'3  84  0  ~/public/mailClient.php
-'4  57  0  ~/public/mailClientTest.php
-'5  1  0  ~/src/App/Mail.php
-'6  158  4  ~/src/App/Mail.php
-'7  104  0  ~/public/mailClient.php
-'8  19  9  ~/public/tasks/campain_enroll_tips_onebyone.php
-'9  16  1  ~/public/tasks/campain_enroll_tips_onebyone.php
+'0  1  30  /usr/local/etc/php/conf.d/time.ini
+'1  2  0  ~/public/mailClientTest.php
+'2  130  0  ~/public/mailClientTest.php
+'3  1  0  ~/public/mailClientTest.php
+'4  84  0  ~/public/mailClient.php
+'5  57  0  ~/public/mailClientTest.php
+'6  1  0  ~/src/App/Mail.php
+'7  158  4  ~/src/App/Mail.php
+'8  104  0  ~/public/mailClient.php
+'9  19  9  ~/public/tasks/campain_enroll_tips_onebyone.php
 
 # Jumplist (newest first):
+-'  1  30  /usr/local/etc/php/conf.d/time.ini
 -'  2  0  ~/public/mailClientTest.php
 -'  1  0  ~/public/mailClientTest.php
 -'  130  0  ~/public/mailClientTest.php
@@ -190,10 +191,15 @@ $
 -'  9  49  /etc/apt/sources.list
 -'  1  0  /etc/apt/sources.list
 -'  9  0  /etc/nginx
--'  1  0  /etc/nginx
--'  9  0  /etc/nginx
 
 # History of marks within files (newest to oldest):
+
+> /usr/local/etc/php/conf.d/time.ini
+	"	1	30
+	^	1	31
+	.	1	31
+	+	1	31
+	e	1	0
 
 > ~/public/mailClientTest.php
 	"	2	0

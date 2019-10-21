@@ -1,12 +1,13 @@
 <?php 
 namespace AsyncTask\Swoole;
 
+ini_set('date.timezone','Asia/Shanghai');
+date_default_timezone_set("Asia/Shanghai");
 use swoole_server;
 // use AsyncTask\Swoole\Server;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 require 'Common.php';
-
 class Mail
 {
     protected $serv;
@@ -45,7 +46,7 @@ class Mail
 
 
     public function __construct($config, $options = [])
-    {
+    { 
         // 构建Server对象，监听端口
         $this->serv = new swoole_server($this->host, $this->port);
 
@@ -135,7 +136,7 @@ class Mail
         $action = $req['action'];
         $mayday = $req['taskData'];
         file_put_contents(getLogFile($this->logPath),date('Y-m-d H:i:s')." onTask: [".$action."].\n",FILE_APPEND) ;
-        //file_put_contents(getLogFile($this->logPath),date('Y-m-d H:i:s')." onTaskData: [".var_export($data,true)."].\n",FILE_APPEND); 
+     //   file_put_contents(getLogFile($this->logPath),date('Y-m-d H:i:s')." onTaskData: [".var_export($data,true)."].\n",FILE_APPEND); 
         switch ($action) {
             case 'sendMail': //发送单个邮件
                 $this->sendMail($mayday);
@@ -148,6 +149,9 @@ class Mail
                 break;
             case 'multiSMS': // 批量队列发送邮件
                 $this->sendMultiSMS($mayday);
+                break;
+           case 'sync_camp': // 批量队列发送邮件
+                $this->sync_camp($mayday);
                 break;
             default:
                 break;
@@ -260,12 +264,29 @@ class Mail
             #return;
             $res=send_sms($taskData);
             file_put_contents(getLogFile($this->logPath),date('Y-m-d H:i:s')." SendSuccess: [".var_export($res,true)."]\n",FILE_APPEND);
-            if($res&&strpos($res,"success")!=flase) return true;
+            if($res&&strpos($res,"success")!=false) return true;
             return false;
         } catch (\Exception $e) {
             $err='Message could not be sent. Mailer Error: '. $e->getMessage();
             file_put_contents(getLogFile($this->logPath),date('Y-m-d H:i:s')." SendError: [".$err."]\n",FILE_APPEND);
             return false;
+        }
+    }
+
+    //同步oasis campaign活动记录
+    private function sync_camp($taskData)
+    {
+        try{
+            $res=sync_camp($taskData);
+            if($res=='ok'){
+              $fd=doCurlGetRequest($taskData['callback_url']);
+              file_put_contents(getLogFile($this->logPath),date('Y-m-d H:i:s')." sync_camp_success: [".var_export($fd,true)."]\n",FILE_APPEND);
+            }else{
+              file_put_contents(getLogFile($this->logPath),date('Y-m-d H:i:s')." sync_camp_fail: [".var_export($res,true)."]\n",FILE_APPEND);
+            } 
+        } catch (\Exception $e) {
+            $err='Message could not be sent. Mailer Error: '. $e->getMessage();
+            file_put_contents(getLogFile($this->logPath),date('Y-m-d H:i:s')." sync_camp_error: [".$err."]\n",FILE_APPEND);
         }
     }
 
