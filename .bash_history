@@ -1,73 +1,3 @@
-cat ../src/App/Common.php 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-php mailClient.php 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-php mailClient.php 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-cat /bak/log/swoole_task/sms.log 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-php mailClient.php 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-cat /bak/log/swoole_task/sms.log 
-php mailClient.php 
-cat /bak/log/swoole_task/sms.log 
-cat /bak/log/swoole_task/sms.log 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-cat /bak/log/swoole_task/sms.log 
-php mailClient.php 
-cat /bak/log/swoole_task/sms.log 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-cat /bak/log/swoole_task/sms.log |grep signature
-php mailClient.php 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-cat /bak/log/swoole_task/sms.log 
-php mailClient.php 
-cat /bak/log/swoole_task/sms.log 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-curl -d appid=13698&to=13916478060&content=&signature=3877871b96eac711ed8a76e286df30bc'  https://api.mysubmail.com/message/send.json
-curl -d "appid=13698&to=13916478060&content=&signature=3877871b96eac711ed8a76e286df30bc" https://api.mysubmail.com/message/send.json
-curl -d "appid=13698&to=13916478060&content=xxx&signature=3877871b96eac711ed8a76e286df30bc" https://api.mysubmail.com/message/send.json
-php mailClient.php 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-cat /bak/log/swoole_task/sms.log 
-php mailClient.php 
-cat /bak/log/swoole_task/sms.log 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-cat /var/log/swoole.log 
-php mailClient.php 
-cat /var/log/swoole.log 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-cat /bak/log/swoole_task/sms.log 
-php mailClient.php 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-cat /bak/log/swoole_task/sms.log 
-php mailClient.php 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-cat /bak/log/swoole_task/sms.log 
-php mailClient.php 
-cat /bak/log/swoole_task/sms.log 
-cat /bak/log/swoole_task/sms.log 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-php mailClient.php 
-cat /bak/log/swoole_task/sms.log 
-cat /bak/log/swoole_task/sms.log 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-php mailClient.php 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-cat /bak/log/swoole_task/sms.log 
-php mailClient.php 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-cat /bak/log/swoole_task/sms.log 
-php mailClient.php 
-cat /bak/log/swoole_task/task_2019-10-01.log 
-cat /bak/log/swoole_task/sms.log 
 php mailClient.php 
 cat /bak/log/swoole_task/sms.log 
 php mailClient.php 
@@ -497,4 +427,74 @@ sh resultCount.sh
 exit
 ls
 cat  /root/src/App/Mail.php
+exit
+ls
+ls /root/
+pwd
+ls /root/public/tasks/campain_enroll_tips_onebyone.php 
+cat  /root/public/tasks/campain_enroll_tips_onebyone.php 
+cd  /root/public/
+ls
+cat mailClient.php 
+exit
+ls /bak/log/
+rm  /bak/log/swoole_task/*
+rm  -f /bak/log/swoole_task/*
+rm  -rf /bak/log/swoole_task/*
+exit
+ls
+ls /bak/log/
+ls /bak/log/swoole_task/
+cat /var/log/swoole.log 
+cd /root/
+cd public/
+ls
+php mailClientTest.php 
+php mailClientTest.php 
+vim  ../src/App/Mail.php
+php mailClientTest.php 
+php mailClientTest.php 
+vim  mailClientTest.php 
+php mailClientTest.php 
+ps -ef
+kill 32  54
+ps -ef
+php mailClientTest.php 
+cat /var/log/swoole.log 
+ls
+exit
+ls
+ps -ef
+cd /root/
+ls
+cd public/
+ls
+php mailClientTest.php 
+exit
+free -m
+exit
+ls
+pwd
+ls
+ls
+cd root/
+ls
+cat public/tasks/campain_enroll_tips_onebyone.php 
+cat public/mailClient.php 
+q!
+cat src/App/Mail.php
+exit
+exit
+ls
+ls
+cd /root/public/
+ls
+php -v
+php -m|grep swoole
+php mailClientTest.php 
+vim  mailClientTest.php 
+exit
+netstat -ltnup
+exit
+netstat -lntup
 exit

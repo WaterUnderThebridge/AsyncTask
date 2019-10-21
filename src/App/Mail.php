@@ -10,7 +10,7 @@ require 'Common.php';
 class Mail
 {
     protected $serv;
-    protected $host = '127.0.0.1';
+    protected $host = '0.0.0.0';
     protected $port = 9502;
     // 进程名称
     protected $taskName = 'swooleMailer';
@@ -256,6 +256,8 @@ class Mail
     private function sendSMS($taskData)
     {
         try{
+            #file_put_contents(getLogFile($this->logPath),date('Y-m-d H:i:s')." preSend: [".var_export($taskData,true)."]\n",FILE_APPEND);
+            #return;
             $res=send_sms($taskData);
             file_put_contents(getLogFile($this->logPath),date('Y-m-d H:i:s')." SendSuccess: [".var_export($res,true)."]\n",FILE_APPEND);
             if($res&&strpos($res,"success")!=flase) return true;

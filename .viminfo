@@ -8,16 +8,17 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~Msle0~/\<fastcgi_pass\>
+~MSle0~/onTask
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :q!
+:/onTask
+:x
 :q！
 :q1
-:x
 :/overcommit
 :/vm.overcommit_memory=
 :c
@@ -31,6 +32,7 @@ $
 :/bind
 
 # Search String History (newest to oldest):
+? onTask
 ? \<fastcgi_pass\>
 ? overcommit
 ? vm.overcommit_memory=
@@ -49,7 +51,7 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-""1	LINE	0
+"1	LINE	0
 	/usr/local/bin/php /root/public/mailClient.php
 "2	LINE	0
 	        }
@@ -77,26 +79,37 @@ $
 	            fastcgi_param  SCRIPT_FILENAME  /var/www/html/$fastcgi_script_name;
 "9	LINE	0
 	            fastcgi_index  index.php;
-"-	CHAR	0
-	 
+""-	CHAR	0
+	#
 
 # File marks:
-'0  27  2  /bak/log/swoole_task/task_2019-10-03.log
-'1  4  0  ~/src/App/Mail.php
-'2  143  0  ~/src/App/Mail.php
-'3  89  8  /bak/log/swoole_task/shell.log
-'4  56  22  /bak/log/swoole_task/shell.log
-'5  25  0  /bak/log/swoole_task/shell.log
-'6  1  0  ~/public/tasks/campain_enroll_tips.php
-'7  2  13  /var/www/html/test.php
-'8  1  1  ~/public/test.sh
-'9  1  0  /var/www/html/test.php
+'0  2  0  ~/public/mailClientTest.php
+'1  130  0  ~/public/mailClientTest.php
+'2  1  0  ~/public/mailClientTest.php
+'3  84  0  ~/public/mailClient.php
+'4  57  0  ~/public/mailClientTest.php
+'5  1  0  ~/src/App/Mail.php
+'6  158  4  ~/src/App/Mail.php
+'7  104  0  ~/public/mailClient.php
+'8  19  9  ~/public/tasks/campain_enroll_tips_onebyone.php
+'9  16  1  ~/public/tasks/campain_enroll_tips_onebyone.php
 
 # Jumplist (newest first):
+-'  2  0  ~/public/mailClientTest.php
+-'  1  0  ~/public/mailClientTest.php
+-'  130  0  ~/public/mailClientTest.php
+-'  84  0  ~/public/mailClient.php
+-'  1  0  ~/public/mailClient.php
+-'  57  0  ~/public/mailClientTest.php
+-'  1  0  ~/src/App/Mail.php
+-'  158  4  ~/src/App/Mail.php
+-'  104  0  ~/public/mailClient.php
+-'  19  9  ~/public/tasks/campain_enroll_tips_onebyone.php
+-'  1  0  ~/public/tasks/campain_enroll_tips_onebyone.php
+-'  16  1  ~/public/tasks/campain_enroll_tips_onebyone.php
 -'  27  2  /bak/log/swoole_task/task_2019-10-03.log
 -'  1  0  /bak/log/swoole_task/task_2019-10-03.log
 -'  4  0  ~/src/App/Mail.php
--'  1  0  ~/src/App/Mail.php
 -'  143  0  ~/src/App/Mail.php
 -'  89  8  /bak/log/swoole_task/shell.log
 -'  1  0  /bak/log/swoole_task/shell.log
@@ -179,30 +192,28 @@ $
 -'  9  0  /etc/nginx
 -'  1  0  /etc/nginx
 -'  9  0  /etc/nginx
--'  1  0  /etc/nginx
--'  3  0  /etc/apt/sources.list
--'  9  0  /etc/nginx
--'  1  0  /etc/nginx
--'  9  0  /etc/nginx
--'  1  0  /etc/nginx
--'  8  0  /etc/apt/sources.list
--'  9  49  /etc/apt/sources.list
--'  1  0  /etc/apt/sources.list
--'  9  0  /etc/nginx
--'  1  0  /etc/nginx
--'  89  8  /bak/log/swoole_task/shell.log
--'  4  0  ~/src/App/Mail.php
 
 # History of marks within files (newest to oldest):
+
+> ~/public/mailClientTest.php
+	"	2	0
+
+> ~/public/mailClient.php
+	"	84	0
+
+> ~/src/App/Mail.php
+	"	1	0
+
+> ~/public/tasks/campain_enroll_tips_onebyone.php
+	"	19	9
+	.	19	9
+	+	19	9
 
 > /bak/log/swoole_task/task_2019-10-03.log
 	"	27	2
 	^	26	7
 	.	26	6
 	+	26	6
-
-> ~/src/App/Mail.php
-	"	4	0
 
 > /bak/log/swoole_task/shell.log
 	"	89	8

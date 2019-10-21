@@ -16,7 +16,7 @@ function send_sms($taskData){
     );
     $dataPost["to"]=$taskData['phone'];
     $dataPost["content"]="【小小运动馆】".$taskData['content'];
-    file_put_contents('/bak/log/swoole_task/sms.log', "时间: ".date('Y-m-d H:i:s')."  ".json_encode($dataPost)."\r\n", FILE_APPEND);
+    file_put_contents("/bak/log/swoole_task/sms_".date('Y-m-d').".log", "时间: ".date('Y-m-d H:i:s')."  ".json_encode($dataPost)."\r\n", FILE_APPEND);
     $con = curl_init((string)$url);
     curl_setopt($con, CURLOPT_HEADER, false);
     curl_setopt($con, CURLOPT_POST, true);
