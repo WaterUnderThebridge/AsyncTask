@@ -1,31 +1,3 @@
-netstat -lntup
-start.sh
-docker ps
-ps -ef
-which start.sh
-cat /usr/local/bin/start.sh
-kill -9 $(cat /run/swooleMail.pid) 
-php /root/public/mailServer.php
-cat  /root/public/mailServer.php
-cd /root/public/
-ls
-php mailClient.php
-php mailClient.php
-php mailClient.php
-php mailClient.php
-php mailClient.php
-php mailClient.php
-php mailClient.php
-php mailClient.php
-cat /var/log/swoole.log 
-> /var/log/swoole.log 
-php mailClient.php
-> /var/log/swoole.log 
-> /var/log/swoole.log 
-php mailClient.php
-> /var/log/swoole.log 
-php mailClient.php
-cat /var/log/swoole.log 
 > /var/log/swoole.log 
 php mailClient.php
 cat /var/log/swoole.log 
@@ -497,4 +469,32 @@ php -r "echo date('Y-m-d H:i:s');"
 exit
 cat /usr/local/etc/php/conf.d/time.ini
 php -r "echo date('Y-m-d H:i:s');"
+exit
+ls /bak/log/swoole_task/task_2019-10-31.log
+cat /root/src/App/Mail.php
+cat /root/src/App/Mail.php
+rm -f /bak/log/swoole_task/task_2019-10-31.log 
+ls  /bak/log/swoole_task/task_2019-10-31.log 
+ls  /bak/log/swoole_task/task_2019-10-31.log 
+exit
+ls
+cat /root/src/App/Mail.php
+vim /root/src/App/Mail.php
+exit
+ls
+cd /root/
+ls
+cd public/
+ls
+cat mailClientTest.php 
+vim  mailClientTest.php 
+exit
+cd /root/public/
+ls
+cat mailClientTest.php 
+php  mailClientTest.php 
+vim  mailClientTest.php 
+exit
+cd /root/public/
+php mailClientTest.php 
 exit

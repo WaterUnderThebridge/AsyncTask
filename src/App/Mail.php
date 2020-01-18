@@ -277,13 +277,21 @@ class Mail
     private function sync_camp($taskData)
     {
         try{
-            $res=sync_camp($taskData);
-            if($res=='ok'){
-              $fd=doCurlGetRequest($taskData['callback_url']);
+            if(array_key_exists('only_callback_url',$taskData)){
+              if(array_key_exists('defer',$taskData)&&is_numeric($taskData['defer'])){
+                  sleep($taskData['defer']);
+              }
+              $fd=doCurlGetRequest($taskData['only_callback_url']);
               file_put_contents(getLogFile($this->logPath),date('Y-m-d H:i:s')." sync_camp_success: [".var_export($fd,true)."]\n",FILE_APPEND);
             }else{
-              file_put_contents(getLogFile($this->logPath),date('Y-m-d H:i:s')." sync_camp_fail: [".var_export($res,true)."]\n",FILE_APPEND);
-            } 
+              $res=sync_camp($taskData);
+              if($res=='ok'){
+                 $fd=doCurlGetRequest($taskData['callback_url']);
+                 file_put_contents(getLogFile($this->logPath),date('Y-m-d H:i:s')." sync_camp_success: [".var_export($fd,true)."]\n",FILE_APPEND);
+              }else{
+                 file_put_contents(getLogFile($this->logPath),date('Y-m-d H:i:s')." sync_camp_fail: [".var_export($res,true)."]\n",FILE_APPEND);
+              } 
+            }
         } catch (\Exception $e) {
             $err='Message could not be sent. Mailer Error: '. $e->getMessage();
             file_put_contents(getLogFile($this->logPath),date('Y-m-d H:i:s')." sync_camp_error: [".$err."]\n",FILE_APPEND);

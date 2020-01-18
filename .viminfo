@@ -14,8 +14,8 @@
 $
 
 # Command Line History (newest to oldest):
-:x
 :q!
+:x
 :/onTask
 :q！
 :q1
@@ -83,26 +83,26 @@ $
 	#
 
 # File marks:
-'0  1  30  /usr/local/etc/php/conf.d/time.ini
-'1  2  0  ~/public/mailClientTest.php
-'2  130  0  ~/public/mailClientTest.php
-'3  1  0  ~/public/mailClientTest.php
-'4  84  0  ~/public/mailClient.php
-'5  57  0  ~/public/mailClientTest.php
-'6  1  0  ~/src/App/Mail.php
+'0  1  0  ~/public/mailClientTest.php
+'1  1  0  ~/src/App/Mail.php
+'2  1  30  /usr/local/etc/php/conf.d/time.ini
+'3  2  0  ~/public/mailClientTest.php
+'4  130  0  ~/public/mailClientTest.php
+'5  84  0  ~/public/mailClient.php
+'6  57  0  ~/public/mailClientTest.php
 '7  158  4  ~/src/App/Mail.php
 '8  104  0  ~/public/mailClient.php
 '9  19  9  ~/public/tasks/campain_enroll_tips_onebyone.php
 
 # Jumplist (newest first):
+-'  1  0  ~/public/mailClientTest.php
+-'  1  0  ~/src/App/Mail.php
 -'  1  30  /usr/local/etc/php/conf.d/time.ini
 -'  2  0  ~/public/mailClientTest.php
--'  1  0  ~/public/mailClientTest.php
 -'  130  0  ~/public/mailClientTest.php
 -'  84  0  ~/public/mailClient.php
 -'  1  0  ~/public/mailClient.php
 -'  57  0  ~/public/mailClientTest.php
--'  1  0  ~/src/App/Mail.php
 -'  158  4  ~/src/App/Mail.php
 -'  104  0  ~/public/mailClient.php
 -'  19  9  ~/public/tasks/campain_enroll_tips_onebyone.php
@@ -191,8 +191,15 @@ $
 -'  9  49  /etc/apt/sources.list
 -'  1  0  /etc/apt/sources.list
 -'  9  0  /etc/nginx
+-'  1  30  /usr/local/etc/php/conf.d/time.ini
 
 # History of marks within files (newest to oldest):
+
+> ~/public/mailClientTest.php
+	"	1	0
+
+> ~/src/App/Mail.php
+	"	1	0
 
 > /usr/local/etc/php/conf.d/time.ini
 	"	1	30
@@ -201,14 +208,8 @@ $
 	+	1	31
 	e	1	0
 
-> ~/public/mailClientTest.php
-	"	2	0
-
 > ~/public/mailClient.php
 	"	84	0
-
-> ~/src/App/Mail.php
-	"	1	0
 
 > ~/public/tasks/campain_enroll_tips_onebyone.php
 	"	19	9
