@@ -1,11 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "hash": "5d4778782c7628b0e6c7575670d4a8f4",
-    "content-hash": "b69d45088cb39e03c70689501fa064f4",
+    "content-hash": "ed7020e4c40d6c9688b53f774adbc780",
     "packages": [
         {
             "name": "doctrine/lexer",
@@ -59,7 +58,7 @@
                 "lexer",
                 "parser"
             ],
-            "time": "2014-09-09 13:34:57"
+            "time": "2014-09-09T13:34:57+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -116,20 +115,20 @@
                 "validation",
                 "validator"
             ],
-            "time": "2018-04-10 10:11:19"
+            "time": "2018-04-10T10:11:19+00:00"
         },
         {
             "name": "phpmailer/phpmailer",
-            "version": "v6.0.5",
+            "version": "v6.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "cb3ea134d4d3729e7857737d5f320cce9caf4d32"
+                "reference": "8190d73eb5def11a43cfb020b7f36db65330698c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/cb3ea134d4d3729e7857737d5f320cce9caf4d32",
-                "reference": "cb3ea134d4d3729e7857737d5f320cce9caf4d32",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/8190d73eb5def11a43cfb020b7f36db65330698c",
+                "reference": "8190d73eb5def11a43cfb020b7f36db65330698c",
                 "shasum": ""
             },
             "require": {
@@ -182,7 +181,7 @@
                 }
             ],
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "time": "2018-03-27 13:49:45"
+            "time": "2018-11-16T00:41:32+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -237,7 +236,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2017-09-30 22:39:41"
+            "time": "2017-09-30T22:39:41+00:00"
         }
     ],
     "packages-dev": [],
